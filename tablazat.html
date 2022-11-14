@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #04AA6D;
+        }
+        </style>
 <style>table, th, td {
    border: 1px  solid red; 
    border-collapse: collapse</style>
@@ -10,11 +39,14 @@
     <title>KGB oldala</title>
 </head>
 <body>
-    <a class="links" href="index.html">FŐOLDAL</a>
-    <a class="links" href="keplink.html">KÉPLINK</a>
-    <a class="links" href="listak.html">LISTÁK</a>
-    <a class="links" href="űrlap.html">ŰRLAP</a>
-    <a class="links" href="tablazat.html">ÓRAREND</a>
+   <ul>
+        <li><a class="active" href="tablazat.html">Órarend</a></li>
+        <li><a href="keplink.html">Képlink</a></li>
+        <li><a href="listak.html">Listák</a></li>
+        <li><a href="űrlap.html">Űrlap</a></li>
+        <li><a href="index.html">Főoldal</a></li>
+        </ul>
+    
     <table>
         <caption>Órarend</caption>
         <tr>
